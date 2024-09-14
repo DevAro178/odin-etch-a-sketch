@@ -8,6 +8,7 @@
     --primary-text:#dcdcdc;
     --secondary-text:#acb1b8;
     --pink:#f472b6;
+    --green:#0f766e;
 }
 
 *{
@@ -18,12 +19,41 @@
 }
 
 body{
+    padding: 25px;
     background-color: var(--dark);
     color: var(--primary-text);
     min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 12px;
+
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 650px;
+        width: 100%;
+
+        p{
+            font-size: 36px;
+            font-weight: 600;
+            margin: 0;
+        }
+        .btn{
+            background-color: var(--green);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+    }
     
     .container{
         display: flex;
