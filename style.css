@@ -22,6 +22,28 @@ body{
     color: var(--primary-text);
     min-height: 90vh;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
+    
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        
+        .item{
+            background-color: var(--dark-content-bg);
+            border: none;
+
+            &:hover{
+                background-color: var(--secondary-content-bg);
+            }
+        }
+
+        .item.active{
+            background-color: var(--highlight);
+        }
+
+    }
 }
